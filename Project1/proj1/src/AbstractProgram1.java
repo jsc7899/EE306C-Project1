@@ -8,7 +8,7 @@ public abstract class AbstractProgram1 {
      * @return A stable Matching.
      */
     public Matching stableMarriageBruteForce(Matching allocation) {
-        long startTime = System.nanoTime();
+        //long startTime = System.nanoTime();
 
         int n = allocation.getUserCount();
         int slots = allocation.totalServerSlots();
@@ -19,11 +19,11 @@ public abstract class AbstractProgram1 {
         while ((matching = p.getNextMatching(allocation)) != null) {
             num++;
             if (isStableMatching(matching)) {
-
+                /*
                 long endTime   = System.nanoTime();
                 long totalTime = endTime - startTime;
                 System.out.println(totalTime);
-
+                */
                 return matching;
             }
         }

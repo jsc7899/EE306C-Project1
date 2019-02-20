@@ -84,7 +84,7 @@ public class Program1 extends AbstractProgram1 {
      * @return A stable Matching.
      */
     public Matching stableMarriageGaleShapley(Matching allocation) {
-        long startTime = System.nanoTime();
+        //long startTime = System.nanoTime();
 
         int[] serverSlots = new int[allocation.getServerCount()];
         int m = allocation.getServerCount();
@@ -101,18 +101,18 @@ public class Program1 extends AbstractProgram1 {
             user_matching.add(i, -1);
         }
         while(allocation.totalServerSlots() > 0) {
-            for (int s = 0; s < m; s++) {                                                    // for each server
-                for (int k = 0; k < n && allocation.getServerSlots().get(s) > 0; k++) {                    // offer a slot to each user while there are slots available
+        for (int s = 0; s < m; s++) {                                                                       // for each server
+                for (int k = 0; k < n && allocation.getServerSlots().get(s) > 0; k++) {                     // offer a slot to each user while there are slots available
                     int u = allocation.getServerPreference().get(s).get(k);
                     if (user_matching.get(u) < 0) {
                         user_matching.set(u, s);
-                        allocation.getServerSlots().set(s, allocation.getServerSlots().get(s) - 1);                      // number of slots at s decreases (one just filled)
+                        allocation.getServerSlots().set(s, allocation.getServerSlots().get(s) - 1);         // number of slots at s decreases (one just filled)
                     } else {
                         int sp = user_matching.get(u); // s'
-                        if (user_preference.get(u).indexOf(s) < user_preference.get(u).indexOf(sp)) {  // if u does not prefer sp to s
+                        if (user_preference.get(u).indexOf(s) < user_preference.get(u).indexOf(sp)) {       // if u does not prefer sp to s
                             user_matching.set(u, s);                                    // match u and s
-                            allocation.getServerSlots().set(sp, allocation.getServerSlots().get(sp) + 1);                     // number of slots at sp increases (one just removed)
-                            allocation.getServerSlots().set(s, allocation.getServerSlots().get(s) - 1);                      // number of slots at s decreases (one just filled)
+                            allocation.getServerSlots().set(sp, allocation.getServerSlots().get(sp) + 1);   // number of slots at sp increases (one just removed)
+                            allocation.getServerSlots().set(s, allocation.getServerSlots().get(s) - 1);     // number of slots at s decreases (one just filled)
                         }
                     }
                 }
@@ -122,11 +122,11 @@ public class Program1 extends AbstractProgram1 {
         for(int i = 0; i < allocation.getServerCount(); i++) {
             allocation.getServerSlots().set(i, serverSlots[i]);
         }
-
+        /*
         long endTime   = System.nanoTime();
         long totalTime = endTime - startTime;
         System.out.println(totalTime);
-
+        */
         return allocation;
     }
 }

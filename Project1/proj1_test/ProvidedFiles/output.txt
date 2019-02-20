@@ -1,5 +1,4 @@
 ----OUTPUT FOR 2-4-4----
-42069
 m=2 n=4
 User 0 Server 1
 User 1 Server 1
@@ -7,7 +6,6 @@ User 2 Server 0
 User 3 Server 1
 Gale-Shapley Server Optimal: stable? true
 
-1972186
 m=2 n=4
 User 0 Server 1
 User 1 Server 1
@@ -17,7 +15,6 @@ Brute Force: stable? true
 
 ***********************
 ----OUTPUT FOR 4-8-5----
-54778
 m=4 n=8
 User 0 Server -1
 User 1 Server 3
@@ -29,7 +26,6 @@ User 6 Server -1
 User 7 Server 0
 Gale-Shapley Server Optimal: stable? true
 
-15053303
 m=4 n=8
 User 0 Server -1
 User 1 Server 3
@@ -43,7 +39,6 @@ Brute Force: stable? true
 
 ***********************
 ----OUTPUT FOR 5-10-8----
-74932
 m=5 n=10
 User 0 Server 3
 User 1 Server 1
@@ -57,7 +52,6 @@ User 8 Server 3
 User 9 Server 0
 Gale-Shapley Server Optimal: stable? true
 
-2424548929
 m=5 n=10
 User 0 Server 3
 User 1 Server 1
@@ -73,7 +67,6 @@ Brute Force: stable? true
 
 ***********************
 ----OUTPUT FOR 8-8-8----
-45231
 m=8 n=8
 User 0 Server 1
 User 1 Server 2
@@ -85,7 +78,6 @@ User 6 Server 4
 User 7 Server 2
 Gale-Shapley Server Optimal: stable? true
 
-432113120
 m=8 n=8
 User 0 Server 1
 User 1 Server 2
@@ -99,7 +91,6 @@ Brute Force: stable? true
 
 ***********************
 ----OUTPUT FOR 50-100-100----
-646602
 m=50 n=100
 User 0 Server 46
 User 1 Server 23
@@ -205,7 +196,6 @@ Gale-Shapley Server Optimal: stable? true
 
 ***********************
 ----OUTPUT FOR 80-80-80----
-505974
 m=80 n=80
 User 0 Server 7
 User 1 Server 24
@@ -291,7 +281,6 @@ Gale-Shapley Server Optimal: stable? true
 
 ***********************
 ----OUTPUT FOR 100-200-180----
-942810
 m=100 n=200
 User 0 Server 55
 User 1 Server 17
@@ -497,7 +486,6 @@ Gale-Shapley Server Optimal: stable? true
 
 ***********************
 ----OUTPUT FOR 200-250-200----
-867688
 m=200 n=250
 User 0 Server -1
 User 1 Server 21
